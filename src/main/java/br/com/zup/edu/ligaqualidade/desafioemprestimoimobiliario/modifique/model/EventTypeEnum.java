@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public enum EventTypeEnum {
     PROPOSAL("proposal"),
-    WARRANT("warrant"),
+    WARRANTY("warranty"),
     PROPONENT("proponent");
 
     public String type;
