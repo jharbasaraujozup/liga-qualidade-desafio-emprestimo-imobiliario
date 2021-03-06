@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -106,7 +107,7 @@ public class Solucao {
     }
 
     private static Map<String, Proposal> buildProposalList(List<Proposal> proposals) {
-        Map<String, Proposal> proposalList = new HashMap();
+        LinkedHashMap<String, Proposal> proposalList = new LinkedHashMap();
 
         // executa os create
         proposals.stream().filter(proposal -> proposal.getAction() == EventActionEnum.CREATED).forEach(proposal -> {
